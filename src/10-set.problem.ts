@@ -1,7 +1,9 @@
 import { expect, it } from "vitest";
 import { Equal, Expect } from "./helpers/type-utils";
 
-const guitarists = new Set();
+type Guitarist = string;
+
+const guitarists = new Set<Guitarist>();
 
 guitarists.add("Jimi Hendrix");
 guitarists.add("Eric Clapton");
